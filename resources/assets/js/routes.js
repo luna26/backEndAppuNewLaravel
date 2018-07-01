@@ -11,7 +11,6 @@ export default (
     <Router history={history}>
         <div className='main-container'>
             <Switch>
-                <Route path='/APPdashboardNews' component={DashboardNews} />
                 <Route path='/' component={Dashboard} />
                 {/* <Route path='/' component={Login} /> */}
             </Switch>

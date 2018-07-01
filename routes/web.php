@@ -11,9 +11,15 @@
 |
 */
 
-//  Route::get('/APP{path?}', function($path = null){
+
+//LOCALHOST
+// Route::get('/APP{path?}', function($path = null){
 //      return View::make('home');
-//  })->where('path', '.*'); 
+// })->where('path', '.*'); 
+
+//  Route::get('/', function(){
+//      return view('welcome');
+//  });
 
 
 Route::post('/getNewsDashboard', 'NewsController@getNewsDashboard');
@@ -22,13 +28,7 @@ Route::post('/uploadNew', 'NewsController@uploadAndSaveNew');
 
 Route::post('/getNews', 'NewsController@getNews');
 
-// Route::group(['middleware' => 'web'], function () {
-//     //
-//     Route::post('/login', function (Request $request) {
-//         return 'lasdogin';
-//     });
-// });
-
+Route::post('/deleteNew', 'NewsController@deleteNew');
 
 Auth::routes();
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('welcome');

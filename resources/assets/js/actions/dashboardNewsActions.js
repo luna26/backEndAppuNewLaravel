@@ -1,9 +1,10 @@
 import axios from 'axios';
-import { ON_LOAD_NEWS, ON_CLICK_DASHBOARD_ITEM, ON_OPEN_MODAL_NEW_UPLOAD, UPLOAD_NEW_REQUEST } from './types';
+import { ON_LOAD_NEWS, ON_CLICK_DASHBOARD_ITEM, ON_OPEN_MODAL_NEW_UPLOAD, UPLOAD_NEW_REQUEST, SHOW_LOADER, UPLOAD_IMAGE_COMPLETED, DELETE_NEW_SUCCESS } from './types';
+import history from '../history';
 
 export const onLoadNews = () => {
     return dispatch => {
-        axios.post("http://34.219.69.51/getNewsDashboard", 'FOO', {
+        axios.post("http://34.219.69.51/getNewsDashboard", '', {
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
@@ -32,7 +33,6 @@ export const clickOptionPanel = (option) => {
 }
 
 export const onClickOpen = (open) => {
-    console.log('EJECT');
     return dispatch => {
         dispatch({
             type: ON_OPEN_MODAL_NEW_UPLOAD,
@@ -42,21 +42,54 @@ export const onClickOpen = (open) => {
 }
 
 export const uploadNewRequest = (title, desc, file) => {
-    console.log('VAMOS A ENVIAR', title);
-    let formData = new FormData();
-
-    formData.append('title', title);
-    formData.append('desc', desc);
-    formData.append('file', file);
-    console.log('VAMOS A ENVIAR', formData.values('title'));
     return dispatch => {
+        dispatch({
+            type: SHOW_LOADER,
+            payload: true
+        });
+        let formData = new FormData();
+
+        formData.append('title', title);
+        formData.append('desc', desc);
+        formData.append('file', file);
         axios.post("http://34.219.69.51/uploadNew", formData)
             .then(function (response) {
-                console.log(response.data);
-                dispatch({
-                    type: 'tyes',
-                    payload: 'tyes'
-                });
+                setTimeout(function () {
+                    dispatch({
+                        type: UPLOAD_IMAGE_COMPLETED,
+                        payload: false
+                    });
+                    dispatch({
+                        type: SHOW_LOADER,
+                        payload: false
+                    });
+                }, 2000);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+}
+
+
+export const deleteNew = (id) => {
+    return dispatch => {
+        dispatch({
+            type: SHOW_LOADER,
+            payload: true
+        });
+        axios.post("http://34.219.69.51/deleteNew", {id:id})
+            .then(function (response) {
+                setTimeout(function () {
+                    dispatch({
+                        type: DELETE_NEW_SUCCESS,
+                        payload: false
+                    });
+                    dispatch({
+                        type: SHOW_LOADER,
+                        payload: false
+                    });
+                }, 2000);
             })
             .catch(function (error) {
                 console.log(error);

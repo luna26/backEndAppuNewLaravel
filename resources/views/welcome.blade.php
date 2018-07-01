@@ -1,4 +1,4 @@
-<!-- <!doctype html>
+<!doctype html>
 <html>
 <head>
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -19,4 +19,4 @@
         var csrf_token = '<?php //echo csrf_token(); ?>'; 
     </script>
 </body>
-</html> -->
+</html>

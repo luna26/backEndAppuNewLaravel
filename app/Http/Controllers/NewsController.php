@@ -13,9 +13,9 @@ class NewsController extends Controller
         return $news;
     }
 
-    public function getNewsDashboard(){
-        $news = DB::table('appu_news')->get();
-        return $news; 
+    public static  function getNewsDashboard(){
+        $news = DB::table('appu_news')->orderBy('news_id', 'desc')->get();
+        return $news;
     }
 
     public function uploadAndSaveNew(Request $request){
@@ -33,4 +33,10 @@ class NewsController extends Controller
         ]);
         return $request->file->getClientOriginalExtension();
     } 
+
+    public function deleteNew(Request $request){
+        $id =  $request->id;
+        DB::table('appu_news')->where('news_id', '=', $id)->delete();
+        return 'OK';
+    }
 }
