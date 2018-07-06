@@ -39,4 +39,18 @@ class NewsController extends Controller
         DB::table('appu_news')->where('news_id', '=', $id)->delete();
         return 'OK';
     }
+
+    public function getNewUpdate(Request $request){
+        $id =  $request->id;
+        $new = DB::table('appu_news')->where('news_id', '=', $id)->get();
+        return $new;
+    }
+
+    public function updateNew(Request $request){
+        $id =  $request->id;
+        $title =  $request->title;
+        $desc =  $request->desc;
+        DB::table('appu_news')->where('news_id', $id)->update(['news_title' => $title, 'news_desc' => $desc]);
+        return 'OK';
+    }
 }

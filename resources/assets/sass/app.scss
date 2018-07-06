@@ -10,6 +10,10 @@
 
 //HEADER
 
+body, #root-react, .App, #app, .dashboard-container, .dashboard-col-1, .dashboard-col-2{
+    height:100%;
+}
+
 .container-header{
     color: white;
     background-color: #3dc4ff;
@@ -85,6 +89,12 @@
     background-color: white;
 }
 
+.title-appu{
+    text-align: center;
+    font-size: 50px;
+    padding: 6%;
+}
+
 .dashboard-news{
     margin-top: 30px;
     position: relative;
@@ -99,8 +109,8 @@
     border-bottom: solid 1px;
     padding-bottom: 6px;
     vertical-align: top;
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 340px;
+    max-height: 340px;
     position: relative;
 }
 
@@ -112,6 +122,7 @@
 
 .container-dashboard-new span{
    display: block;
+   word-break: break-word;
 }
 
 .dashboard-container{
@@ -129,7 +140,7 @@
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    width: 40%;
+    width: 100%;
 }
 
 .container-upload-new-button{
@@ -144,19 +155,29 @@
     color: #3dc4ff;
 }
 
+.dashboard-container-buttons button:nth-child(1){
+    margin-bottom: 10px;
+}
+
 .container-upload-new-button i, .container-upload-new-button span{
     vertical-align: middle;
 }
 
 .container-upload-new-button i{
     position: absolute;
-    left: 3px;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .container-upload-new-button:hover{
     color: white;
     background-color: #3dc4ff;
 }
+
+textarea {
+    resize: none;
+  }
 
 .blur-style{
     filter: blur(5px);
@@ -173,9 +194,23 @@
     width: 40%;
     margin: 0 auto;
     background-color: white;
-    padding: 2% 0 2% 5%;
+    padding: 1% 4%;
     border: solid 1px #3dc4ff;
     border-radius: 5px;
+}
+
+
+.upload-new-form div{
+    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.input-upload-new-title, .input-upload-new-desc{
+    width: 100%;
+}
+
+.input-upload-new-desc{
+    height: 100px;
 }
 
 .btn-style{
@@ -212,4 +247,105 @@
     color: white;
     left: 0;
     margin-top: 150px;
+}
+
+.edit-new-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 110;
+}
+
+.edit-form-contaier{
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5%;
+    border: solid 1px #3dc4ff;
+    border-radius: 5px;
+}
+
+.edit-form-contaier img{
+    width: 100%;
+    max-height: 170px;
+    max-width: 170px;
+}
+
+.edit-new-title input{
+    width: 100%;
+}
+
+.edit-new-desc textarea{
+    width: 100%;
+    margin-bottom: 50px;
+    height: 100px;
+}
+
+.dashboard-item-dropdown{
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    background-color: #3dc4ff;
+}
+
+.admin-careers-panel{
+    background-color: white;
+    color: #3dc4ff;
+}
+
+//CAREERS
+
+.career-container{
+
+}
+
+.table-career-container table{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.table-career-container th{
+    position: relative;
+}
+
+.table-career-container th .btn-danger{
+    position: absolute;
+    right: 0;
+}
+
+.table-career-container th .btn-success{
+    margin-right: 5px;
+}
+
+.form-container-post-career{
+    margin: 0 auto;
+    width: 50%;
+    background-color: aliceblue;
+    padding: 27px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.form-container-post-career label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container-post-career div{
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-container-post-career .btn-danger{    
+    position: absolute;
+    right: 0;
+}
+
+.btn-create-career{
+    margin-top: 10px;
+    margin-left: 10px;
 }

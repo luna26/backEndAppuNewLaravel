@@ -17,9 +17,9 @@
 //      return View::make('home');
 // })->where('path', '.*'); 
 
-//  Route::get('/', function(){
-//      return view('welcome');
-//  });
+  Route::get('/', function(){
+      return view('welcome');
+  });
 
 
 Route::post('/getNewsDashboard', 'NewsController@getNewsDashboard');
@@ -30,5 +30,13 @@ Route::post('/getNews', 'NewsController@getNews');
 
 Route::post('/deleteNew', 'NewsController@deleteNew');
 
-Auth::routes();
-Route::get('/', 'HomeController@index')->name('welcome');
+Route::post('/getNewUpdate', 'NewsController@getNewUpdate');
+
+Route::post('/updateNew', 'NewsController@updateNew');
+
+Route::post('/getCareers', 'CareerController@getCareers');
+Route::post('/postCareer', 'CareerController@createCareer');
+Route::post('/deleteCareer', 'CareerController@deleteCareer'); 
+
+//Auth::routes();
+//Route::get('/', 'HomeController@index')->name('welcome');

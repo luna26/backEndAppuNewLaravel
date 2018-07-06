@@ -15,6 +15,11 @@ class VerifyCsrfToken extends Middleware
         'getNewsDashboard',
         'getNews',
         'uploadNew',
-        'deleteNew'
+        'deleteNew',
+        'getNewUpdate',
+        'updateNew',
+        'getCareers',
+        'postCareer',
+        'deleteCareer'
     ];
 }

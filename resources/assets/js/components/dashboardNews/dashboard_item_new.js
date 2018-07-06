@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class DashboardItemNews extends Component {
     render() {
         const refDeleteButton = React.createRef();
-        const { keyNew, newTitle, newDate, newUrl, onDelete } = this.props;
+        const refEditButton = React.createRef();
+        const { keyNew, newTitle, newDate, newUrl, onDelete, onUpdateModal } = this.props;
         const SERVER_URL = 'http://34.219.69.51';
         return (
             <div className='container-dashboard-new'>
@@ -11,10 +12,10 @@ class DashboardItemNews extends Component {
                 <img src={SERVER_URL+newUrl} />
                 <span>{newTitle}</span>
                 <div className='dashboard-container-buttons'>
-                    <button data-id={keyNew}>
+                    <button className='btn btn-info' data-id={keyNew} onClick={onUpdateModal.bind(this, true, refEditButton)} ref={refEditButton}>
                         Editar
                     </button>
-                    <button data-id={keyNew} key={keyNew} onClick={onDelete.bind(this, refDeleteButton)} ref={refDeleteButton}>
+                    <button className='btn btn-danger' data-id={keyNew} key={keyNew} onClick={onDelete.bind(this, refDeleteButton)} ref={refDeleteButton}>
                         Eliminar
                     </button>
                 </div>
