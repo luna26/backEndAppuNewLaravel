@@ -41,4 +41,10 @@ class CareerController extends Controller
         DB::table('appu_careers')->where('careers_id', '=', $id)->delete();
         return $id;
     }
+
+    public function getCareer(Request $request){
+        $id =  $request->id;
+        $career = DB::table('appu_careers')->where('careers_id', '=', $id)->get();
+        return $career;
+    }
 }
