@@ -12,7 +12,6 @@ export default (
         <div className='main-container'>
             <Switch>
                 <Route path='/' component={Dashboard} />
-                {/* <Route path='/' component={Login} /> */}
             </Switch>
         </div>
     </Router>

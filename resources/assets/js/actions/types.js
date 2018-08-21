@@ -24,3 +24,9 @@ export const UPDATE_INFO_CHANGE_DESC = 'update_info_change_desc';
 export const ON_LOAD_CAREERS = 'on_load_careers';
 export const ON_POST_CAREER_COMPLETED = 'on_post_career_completed';
 export const ON_DELETE_CAREER = 'on_delete_career';
+
+//CALC
+export const ON_LOAD_SCHEDULES_CALC = 'on_load_schedules';
+export const ON_LOAD_COURSES_CAL = 'on_load_courses_cal';
+export const ON_LOAD_COURSES_CAREERS = 'on_load_courses_careers';
+export const ON_LOAD_SCHEDULE_COURSE = 'on_load_schedule_course';

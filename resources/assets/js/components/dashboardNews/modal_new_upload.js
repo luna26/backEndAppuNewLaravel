@@ -36,8 +36,8 @@ class ModalNewUpload extends Component {
                     </div>
                     <div>
                         <p>*Click para subir la noticia a la aplicacion</p>
-                        <p><button className='btn-style' onClick={sendRequestFunction.bind(this, this.inputFileRef)}>Enviar</button></p>
-                        <p><button className='btn-style' onClick={onClose.bind(this)}>Cerrar</button></p>
+                        <p><button className='btn btn-info' onClick={sendRequestFunction.bind(this, this.inputFileRef)}>Enviar</button></p>
+                        <p><button className='btn btn-danger' onClick={onClose.bind(this)}>Cerrar</button></p>
                     </div>
                 </div>
             </div>

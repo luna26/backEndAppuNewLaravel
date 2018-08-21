@@ -7,31 +7,33 @@ import DashboardNews from '../dashboardNews/dashboard-news';
 import logoUcem from '../../../images/Logo-ucem.png';
 import loader from '../../../images/8.gif';
 import DashboardCareers from '../dashboardCareer/dashboard_careers';
+import DashboardInfo from '../dashboardInfo/dashboardInfo';
+import DashboardCalc from '../dashboardCalc/dashboardCalc';
 
 class Dashboard extends Component {
     returnComponentToLoad() {
-        const OPTION = this.props.dashboard.panelOptionSelected;
         switch (this.props.dashboard.panelOptionSelected) {
             case 1:
                 return <DashboardNews />;
-                break;
             case 2:
                 return <DashboardCareers />;
-                break;
+            case 3:
+                return <DashboardInfo />;
+            case 4:
+                return <DashboardCalc />;
             default:
                 return (
                     <div className='title-appu'>
                         Bienvenido al panel administrativo de Appu!
                     </div>
                 );
-                break;
         }
     }
 
     returnLoader() {
         if (this.props.dashboard.showLoader) {
             return (
-                <div className='loader-container'> 
+                <div className='loader-container'>
                     <div className='loader-info'>
                         <img src={loader} />
                     </div>
@@ -41,7 +43,6 @@ class Dashboard extends Component {
     }
 
     render() {
-        console.log(this.props.dashboard, 'this.props.dashboard');
         const { clickOptionPanel } = this.props;
         return (
             <div className='dashboard-container'>
@@ -50,7 +51,9 @@ class Dashboard extends Component {
                     <DashboardPanel>
                         <img src={logoUcem} className='logo-panel' onClick={clickOptionPanel.bind(this, 0)} />
                         <DashboardItem type={'button'} label={'Noticias'} onClickOption={clickOptionPanel.bind(this, 1)} />
-                        <DashboardItem type={'button'} label={'Carreras'} onClickOption={clickOptionPanel.bind(this, 2)}/> 
+                        <DashboardItem type={'button'} label={'Carreras'} onClickOption={clickOptionPanel.bind(this, 2)} />
+                        <DashboardItem type={'button'} label={'Informacion'} onClickOption={clickOptionPanel.bind(this, 3)} />
+                        <DashboardItem type={'button'} label={'Calculadora'} onClickOption={clickOptionPanel.bind(this, 4)} />
                     </DashboardPanel>
                 </div>
                 <div className='dashboard-col-2'>

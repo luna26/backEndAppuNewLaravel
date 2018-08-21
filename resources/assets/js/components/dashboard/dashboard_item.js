@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class DashboardItem extends Component {
     renderOptions() {
-        const { label, onClickOption, type, children, labelDropdown, dropdownObject, onClickOptionSelect } = this.props;
+        const { label, onClickOption, type, labelDropdown, dropdownObject } = this.props;
         if (type === 'button') {
             return (
                 <div className='dashboard-item-div item-panel' onClick={onClickOption}>
@@ -10,7 +10,6 @@ class DashboardItem extends Component {
                 </div>
             );
         } else if (type === 'dropdown' && dropdownObject) {
-            const selectOptioneRef = React.createRef();
             return (
                 <div className='item-panel'>
                     <p>{labelDropdown}</p>

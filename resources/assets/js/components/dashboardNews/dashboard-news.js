@@ -16,12 +16,12 @@ import ModalNewUpload from './modal_new_upload';
 import EditNew from './edit_new';
 
 class DashboardNews extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this.state = {
-            titleNewText : '',
-            descNewText:''
+            titleNewText: '',
+            descNewText: ''
         }
     }
     componentDidMount() {
@@ -32,15 +32,15 @@ class DashboardNews extends Component {
         this.props.onLoadNews();
     }
 
-    onChangeTitleNew(text){
+    onChangeTitleNew(text) {
         this.setState({
-            titleNewText:text
+            titleNewText: text
         });
     }
 
-    onChangeDescNew(text){
+    onChangeDescNew(text) {
         this.setState({
-            descNewText:text
+            descNewText: text
         });
     }
 
@@ -53,10 +53,10 @@ class DashboardNews extends Component {
         }
     }
 
-    returnExtendTitle(title){
-        if(title.length >= 50){
+    returnExtendTitle(title) {
+        if (title.length >= 50) {
             return title.substring(0, 70) + '...';
-        }else{
+        } else {
             return title;
         }
     }
@@ -114,11 +114,10 @@ class DashboardNews extends Component {
             <div className='dashboard-news'>
                 {this.returnEditModal()}
                 {this.returnModalUpload()}
+                <div className='btn btn-warning' onClick={this.onClickShowModal.bind(this)}>
+                    <span>Subir Noticia</span>
+                </div>
                 <div className={classNamesReturn}>
-                    <div className='container-upload-new-button' onClick={this.onClickShowModal.bind(this)}>
-                        <i className="material-icons glyphicon glyphicon-plus" />
-                        <span>Subir Noticia</span>
-                    </div>
                     {this.returnNews()}
                 </div>
             </div>

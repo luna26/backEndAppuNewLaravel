@@ -13,10 +13,11 @@ import {
     UPDATE_INFO_CHANGE_DESC
 } from './types';
 import history from '../history';
+import {URL_SERVER} from '../config';
 
 export const onLoadNews = () => {
     return dispatch => {
-        axios.post("http://34.219.69.51/getNewsDashboard", '', {
+        axios.post(URL_SERVER+"/getNewsDashboard", '', {
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
@@ -67,7 +68,7 @@ export const uploadNewRequest = (title, desc, file) => {
         formData.append('title', title);
         formData.append('desc', desc);
         formData.append('file', file);
-        axios.post("http://34.219.69.51/uploadNew", formData)
+        axios.post(URL_SERVER+"/uploadNew", formData)
             .then(function (response) {
                 setTimeout(function () {
                     dispatch({
@@ -93,7 +94,7 @@ export const deleteNew = (id) => {
             type: SHOW_LOADER,
             payload: true
         });
-        axios.post("http://34.219.69.51/deleteNew", { id: id })
+        axios.post(URL_SERVER+"/deleteNew", { id: id })
             .then(function (response) {
                 setTimeout(function () {
                     dispatch({
@@ -119,7 +120,7 @@ export const openUpdateModal = (open, id) => {
                 type: OPEN_UPDATE_MODAL,
                 payload: true
             });
-            axios.post("http://34.219.69.51/getNewUpdate", { id: id })
+            axios.post(URL_SERVER+"/getNewUpdate", { id: id })
                 .then(function (response) {
                     dispatch({
                         type: UPDATE_NEW_INFO_READY,
@@ -144,7 +145,7 @@ export const updateNew = (id, title, desc) => {
             type: SHOW_LOADER,
             payload: true
         });
-        axios.post("http://34.219.69.51/updateNew", { id: id, title: title, desc: desc })
+        axios.post(URL_SERVER+"/updateNew", { id: id, title: title, desc: desc })
             .then(function (response) {
                 dispatch({
                     type: UPDATE_INFO_COMPLETED,

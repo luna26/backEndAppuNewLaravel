@@ -4,10 +4,11 @@ import {
     ON_POST_CAREER_COMPLETED,
     ON_DELETE_CAREER
 } from './types';
+import {URL_SERVER} from '../config';
 
 export const getCareers = (text) => {
     return dispatch => {
-        axios.post("http://34.219.69.51/getCareers", '', {
+        axios.post(URL_SERVER+"/getCareers", '', {
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
@@ -35,7 +36,7 @@ export const postCareer = (title, desc, file, image) => {
     formData.append('image', image);
 
     return dispatch => {
-        axios.post("http://34.219.69.51/postCareer", formData, {
+        axios.post(URL_SERVER+"/postCareer", formData, {
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
@@ -55,7 +56,7 @@ export const postCareer = (title, desc, file, image) => {
 
 export const deleteCareer = (id) => {
     return dispatch => {
-        axios.post("http://34.219.69.51/deleteCareer", { id: id })
+        axios.post(URL_SERVER+"/deleteCareer", { id: id })
             .then(function (response) {
                 dispatch({
                     type: ON_DELETE_CAREER,

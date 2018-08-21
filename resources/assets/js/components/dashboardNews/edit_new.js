@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class EditNew extends Component {
 
     returnInfo() {
-        const SERVER_URL = 'http://34.219.69.51';
         if (this.props.infoUpdate) {
             const refInputTitle = React.createRef();
             const refInputDesc = React.createRef();
@@ -31,14 +30,9 @@ class EditNew extends Component {
                             maxLength="900"
                         />
                     </div>
-                    {/* <div>
-                        <img src={SERVER_URL + news_url_image} />
-                        <p>Cambiar imagen de noticia</p>
-                        <input type='file' />
-                    </div> */}
                     <div>
-                        <p><button ref={refInputId} data-id={news_id} onClick={onClickUpdate.bind(this, refInputId, refInputTitle, refInputDesc)} className='btn-style'>Aceptar / Enviar</button></p>
-                        <p><button onClick={onClickCloseUpdate.bind(this, false, null)} className='btn-style'>Cerrar</button></p>
+                        <p><button ref={refInputId} data-id={news_id} onClick={onClickUpdate.bind(this, refInputId, refInputTitle, refInputDesc)} className='btn btn-info'>Aceptar / Enviar</button></p>
+                        <p><button onClick={onClickCloseUpdate.bind(this, false, null)} className='btn btn-danger'>Cerrar</button></p>
                     </div>
                 </div>
             );

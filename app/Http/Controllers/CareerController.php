@@ -37,14 +37,29 @@ class CareerController extends Controller
     }
 
     public function deleteCareer(Request $request){
-        $id =  $request->id;
+        $id = $request->id;
         DB::table('appu_careers')->where('careers_id', '=', $id)->delete();
         return $id;
     }
 
     public function getCareer(Request $request){
-        $id =  $request->id;
+        $id = $request->id;
         $career = DB::table('appu_careers')->where('careers_id', '=', $id)->get();
         return $career;
+    }
+
+    public function getCoursesCarrer(Request $request){
+        $id = $request->id;
+       
+        $courses = DB::table('appu_careers')
+            ->join('appu_careers_courses', 'appu_careers.careers_id', '=', 'appu_careers_courses.careers_id')
+            ->join('appu_courses', 'appu_careers_courses.course_code', '=', 'appu_courses.course_code')
+            ->join('appu_courses_schedule', 'appu_courses.course_code', '=', 'appu_courses_schedule.course_code')
+            ->join('appu_schedule', 'appu_courses_schedule.schedule_id', '=', 'appu_schedule.schedule_id')
+            ->join('appu_days', 'appu_schedule.day_id', '=', 'appu_days.day_id')
+            ->select('appu_careers.*', 'appu_courses.*', 'appu_schedule.*', 'appu_days.*')
+            ->where('appu_careers.careers_id', $id)->orderBy('appu_days.day_id', 'asc')
+            ->get();
+        return $courses;
     }
 }

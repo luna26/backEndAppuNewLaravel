@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getCareers, postCareer, deleteCareer } from '../../actions';
+import {URL_SERVER} from '../../config';
 
 class DashboardCareers extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class DashboardCareers extends Component {
     }
 
     renderRowTable(tableInfo) {
-        const SERVER_URL = 'http://34.219.69.51';
+        const SERVER_URL = URL_SERVER;
         if (tableInfo) {
             return (
                 <table className="table table-dark">
@@ -39,7 +40,7 @@ class DashboardCareers extends Component {
                                     <tr key={index} >
                                         <th scope="row">{item.careers_title}</th>
                                         <th scope="row">
-                                            <a className='btn btn-success' download={'test.pdf'} href={SERVER_URL + item.careers_url_path}>Descargar Plan</a>
+                                            <a className='btn btn-success' download href={SERVER_URL + item.careers_url_path}>Descargar Plan</a>
                                             <button className='btn btn-info'>Editar</button>
                                             <button id={item.careers_id} onClick={this.deleteCareer.bind(this)} className='btn btn-danger'>Eliminar</button>
                                         </th>

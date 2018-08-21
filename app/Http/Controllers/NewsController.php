@@ -8,8 +8,9 @@ use Illuminate\Support\Facades\DB;
 class NewsController extends Controller
 {
     //
-    public function getNews(){
-        $news = DB::table('appu_news')->get();
+    public function getNews(Request $request){
+        $skip = $request->skip;
+        $news = DB::table('appu_news')->orderBy('news_id', 'desc')->skip($skip)->take(7)->get();;
         return $news;
     }
 
@@ -18,7 +19,7 @@ class NewsController extends Controller
         return $news;
     }
 
-    public function uploadAndSaveNew(Request $request){
+    public function uploadAndSaveNew(Request $request){ 
         $file = $request->file;
         $title = $request->title;
         $desc = $request->desc;
