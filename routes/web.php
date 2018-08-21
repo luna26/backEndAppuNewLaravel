@@ -39,6 +39,13 @@ Route::post('/getSchedules', 'CalculatorController@getSchedules');
 Route::post('/getCoursesDashboard', 'CalculatorController@getCoursesDashboard');
 Route::post('/getCoursesCareers', 'CalculatorController@getCoursesCareers');
 Route::post('/returnCourseSchedule', 'CalculatorController@returnCourseSchedule');
+Route::post('/returnCareersDashboard', 'CalculatorController@returnCareersDashboard');
+Route::post('/addCareersCourse', 'CalculatorController@addCareersCourse');
+Route::post('/addScheduleCourse', 'CalculatorController@addScheduleCourse');
+Route::post('/loadCareerCourseInfo', 'CalculatorController@loadCareerCourseInfo');
+Route::post('/deleteCourseCaereer', 'CalculatorController@deleteCourseCaereer');
+
+
 
 //  Auth::routes();
 //  Route::get('/', 'HomeController@index')->name('welcome');

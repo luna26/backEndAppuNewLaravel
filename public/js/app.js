@@ -392,28 +392,35 @@ module.exports = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return ON_CLICk_SEND_FORM; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ON_CHANGE_TEXT_EMAIL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ON_CHANGE_TEXT_PASS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return ON_LOAD_NEWS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return ON_CLICK_DASHBOARD_ITEM; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return ON_OPEN_MODAL_NEW_UPLOAD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return ON_CLICk_SEND_FORM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return ON_CHANGE_TEXT_EMAIL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return ON_CHANGE_TEXT_PASS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return ON_LOAD_NEWS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return ON_CLICK_DASHBOARD_ITEM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return ON_OPEN_MODAL_NEW_UPLOAD; });
 /* unused harmony export UPLOAD_NEW_REQUEST */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return SHOW_LOADER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return UPLOAD_IMAGE_COMPLETED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return SHOW_LOADER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return UPLOAD_IMAGE_COMPLETED; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DELETE_NEW_SUCCESS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return OPEN_UPDATE_MODAL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return UPDATE_NEW_INFO_READY; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return UPDATE_INFO_COMPLETED; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return UPDATE_INFO_CHANGE_TITLE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return UPDATE_INFO_CHANGE_DESC; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return ON_LOAD_CAREERS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return ON_POST_CAREER_COMPLETED; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return ON_DELETE_CAREER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return ON_LOAD_SCHEDULES_CALC; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return ON_LOAD_COURSES_CAL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return ON_LOAD_COURSES_CAREERS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return ON_LOAD_SCHEDULE_COURSE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return OPEN_UPDATE_MODAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return UPDATE_NEW_INFO_READY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return UPDATE_INFO_COMPLETED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return UPDATE_INFO_CHANGE_TITLE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return UPDATE_INFO_CHANGE_DESC; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return ON_LOAD_CAREERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return ON_POST_CAREER_COMPLETED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return ON_DELETE_CAREER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return ON_LOAD_SCHEDULES_CALC; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return ON_LOAD_COURSES_CAL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return ON_LOAD_COURSES_CAREERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return ON_LOAD_SCHEDULE_COURSE; });
+/* unused harmony export ON_ADD_CAREER_SCHEDULE */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ON_ADD_CAREER_COURSE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ON_ADD_CAREER_COURSE_ERROR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return ON_DELETE_CAREER_COURSE; });
+/* unused harmony export ON_LOAD_CAREER_SCHEDULE_INFO */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return ON_LOAD_CAREERS_CALC; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return RELOAD_COURSES_CAREER; });
 var ON_CLICk_SEND_FORM = 'on_click_send_form';
 var ON_CHANGE_TEXT_EMAIL = 'on_change_email';
 var ON_CHANGE_TEXT_PASS = 'on_change_pass';
@@ -444,6 +451,13 @@ var ON_LOAD_SCHEDULES_CALC = 'on_load_schedules';
 var ON_LOAD_COURSES_CAL = 'on_load_courses_cal';
 var ON_LOAD_COURSES_CAREERS = 'on_load_courses_careers';
 var ON_LOAD_SCHEDULE_COURSE = 'on_load_schedule_course';
+var ON_ADD_CAREER_SCHEDULE = 'on_add_career_schedule';
+var ON_ADD_CAREER_COURSE = 'on_add_career_course';
+var ON_ADD_CAREER_COURSE_ERROR = 'on_add_career_course_error';
+var ON_DELETE_CAREER_COURSE = 'on_delete_career_course_error';
+var ON_LOAD_CAREER_SCHEDULE_INFO = 'on_load_career_schedule_info';
+var ON_LOAD_CAREERS_CALC = 'on_load_careers';
+var RELOAD_COURSES_CAREER = 'reload_courses_careers';
 
 /***/ }),
 /* 3 */
@@ -561,22 +575,30 @@ var createPath = function createPath(location) {
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "uploadNewRequest", function() { return __WEBPACK_IMPORTED_MODULE_1__dashboardNewsActions__["i"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboardActions__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboardActions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__);
+/* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "addCareersCourse")) __webpack_require__.d(__webpack_exports__, "addCareersCourse", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["addCareersCourse"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "deleteCareer")) __webpack_require__.d(__webpack_exports__, "deleteCareer", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["deleteCareer"]; });
+/* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "deleteCourseCaereer")) __webpack_require__.d(__webpack_exports__, "deleteCourseCaereer", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["deleteCourseCaereer"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "getCareers")) __webpack_require__.d(__webpack_exports__, "getCareers", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["getCareers"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "getCoursesCalcDashboard")) __webpack_require__.d(__webpack_exports__, "getCoursesCalcDashboard", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["getCoursesCalcDashboard"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "getCoursesCareers")) __webpack_require__.d(__webpack_exports__, "getCoursesCareers", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["getCoursesCareers"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "getSchedules")) __webpack_require__.d(__webpack_exports__, "getSchedules", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["getSchedules"]; });
+/* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "loadCareersCalc")) __webpack_require__.d(__webpack_exports__, "loadCareersCalc", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["loadCareersCalc"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "postCareer")) __webpack_require__.d(__webpack_exports__, "postCareer", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["postCareer"]; });
+/* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "reloadCoursesCareer")) __webpack_require__.d(__webpack_exports__, "reloadCoursesCareer", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["reloadCoursesCareer"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__dashboardActions__, "returnCourseSchedule")) __webpack_require__.d(__webpack_exports__, "returnCourseSchedule", function() { return __WEBPACK_IMPORTED_MODULE_2__dashboardActions__["returnCourseSchedule"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__careersActions__ = __webpack_require__(112);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "deleteCareer", function() { return __WEBPACK_IMPORTED_MODULE_3__careersActions__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "getCareers", function() { return __WEBPACK_IMPORTED_MODULE_3__careersActions__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "postCareer", function() { return __WEBPACK_IMPORTED_MODULE_3__careersActions__["c"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calcActions__ = __webpack_require__(113);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "getCoursesCalcDashboard", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "getCoursesCareers", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "getSchedules", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "returnCourseSchedule", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["d"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "addCareersCourse", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "deleteCourseCaereer", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "getCoursesCalcDashboard", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["c"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "getCoursesCareers", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["d"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "getSchedules", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["e"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "loadCareersCalc", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["f"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "reloadCoursesCareer", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["g"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "returnCourseSchedule", function() { return __WEBPACK_IMPORTED_MODULE_4__calcActions__["h"]; });
 
 
 
@@ -23987,9 +24009,9 @@ var INITIAL_STATE = {
     var action = arguments[1];
 
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["b" /* ON_CHANGE_TEXT_EMAIL */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["d" /* ON_CHANGE_TEXT_EMAIL */]:
             return _extends({}, state, { email: action.payload });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["c" /* ON_CHANGE_TEXT_PASS */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["e" /* ON_CHANGE_TEXT_PASS */]:
             return _extends({}, state, { password: action.payload });
             break;
         default:
@@ -24019,9 +24041,9 @@ var INITIAL_STATE = {
     var action = arguments[1];
 
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["d" /* ON_CLICK_DASHBOARD_ITEM */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["f" /* ON_CLICK_DASHBOARD_ITEM */]:
             return _extends({}, state, { panelOptionSelected: action.payload.option, carrerSelected: action.payload.optionCareer });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["p" /* SHOW_LOADER */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["u" /* SHOW_LOADER */]:
             return _extends({}, state, { showLoader: action.payload });
             break;
         default:
@@ -24055,31 +24077,31 @@ var INITIAL_STATE = {
     var action = arguments[1];
 
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["m" /* ON_OPEN_MODAL_NEW_UPLOAD */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["q" /* ON_OPEN_MODAL_NEW_UPLOAD */]:
             return _extends({}, state, { openNewUploadModal: action.payload });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["j" /* ON_LOAD_NEWS */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["n" /* ON_LOAD_NEWS */]:
             return _extends({}, state, { news: action.payload, mountComponentAgain: false });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["u" /* UPLOAD_IMAGE_COMPLETED */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["z" /* UPLOAD_IMAGE_COMPLETED */]:
             return _extends({}, state, { openNewUploadModal: false, mountComponentAgain: true });
             break;
         case __WEBPACK_IMPORTED_MODULE_0__actions_types__["a" /* DELETE_NEW_SUCCESS */]:
             return _extends({}, state, { mountComponentAgain: true });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["o" /* OPEN_UPDATE_MODAL */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["s" /* OPEN_UPDATE_MODAL */]:
             return _extends({}, state, { openModalUpdate: action.payload, updateInfo: null });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["t" /* UPDATE_NEW_INFO_READY */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["y" /* UPDATE_NEW_INFO_READY */]:
             return _extends({}, state, { updateInfo: action.payload.data, updateTitle: action.payload.data[0].news_title, updateDesc: action.payload.data[0].news_desc });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["s" /* UPDATE_INFO_COMPLETED */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["x" /* UPDATE_INFO_COMPLETED */]:
             return _extends({}, state, { updateInfo: null, openModalUpdate: false, mountComponentAgain: true });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["r" /* UPDATE_INFO_CHANGE_TITLE */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["w" /* UPDATE_INFO_CHANGE_TITLE */]:
             return _extends({}, state, { updateTitle: action.payload });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["q" /* UPDATE_INFO_CHANGE_DESC */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["v" /* UPDATE_INFO_CHANGE_DESC */]:
             return _extends({}, state, { updateDesc: action.payload });
             break;
         default:
@@ -24107,13 +24129,13 @@ var INITIAL_STATE = {
     var action = arguments[1];
 
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["g" /* ON_LOAD_CAREERS */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["j" /* ON_LOAD_CAREERS */]:
             return _extends({}, state, { infoCareers: action.payload.data, loadComponentAgain: false });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["n" /* ON_POST_CAREER_COMPLETED */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["r" /* ON_POST_CAREER_COMPLETED */]:
             return _extends({}, state, { loadComponentAgain: true });
             break;
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["f" /* ON_DELETE_CAREER */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["h" /* ON_DELETE_CAREER */]:
             return _extends({}, state, { loadComponentAgain: true });
             break;
         default:
@@ -24129,13 +24151,18 @@ var INITIAL_STATE = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions_types__ = __webpack_require__(2);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 var INITIAL_STATE = {
     schedules: null,
     courses: null,
+    careers: null,
+    scheduleCareer: null,
     coursesCareer: null,
-    scheduleCareer: null
+    coursesCarrerError: '',
+    reloadCoursesCareer: false
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
@@ -24143,14 +24170,24 @@ var INITIAL_STATE = {
     var action = arguments[1];
 
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["k" /* ON_LOAD_SCHEDULES_CALC */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["o" /* ON_LOAD_SCHEDULES_CALC */]:
             return _extends({}, state, { schedules: action.payload.data });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["h" /* ON_LOAD_COURSES_CAL */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["l" /* ON_LOAD_COURSES_CAL */]:
             return _extends({}, state, { courses: action.payload.data });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["i" /* ON_LOAD_COURSES_CAREERS */]:
-            return _extends({}, state, { coursesCareer: action.payload.data });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["l" /* ON_LOAD_SCHEDULE_COURSE */]:
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["k" /* ON_LOAD_CAREERS_CALC */]:
+            return _extends({}, state, { careers: action.payload.data });
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["p" /* ON_LOAD_SCHEDULE_COURSE */]:
             return _extends({}, state, { scheduleCareer: action.payload.data });
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["m" /* ON_LOAD_COURSES_CAREERS */]:
+            return _extends({}, state, { coursesCareer: action.payload.data, coursesCarrerError: '', reloadCoursesCareer: false });
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["b" /* ON_ADD_CAREER_COURSE */]:
+            return _extends({}, state, _defineProperty({ coursesCarrerError: '', reloadCoursesCareer: true }, 'coursesCarrerError', 'Curso agregado a carrera correctamente'));
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["c" /* ON_ADD_CAREER_COURSE_ERROR */]:
+            return _extends({}, state, { coursesCarrerError: 'Combinacion ya existe' });
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["t" /* RELOAD_COURSES_CAREER */]:
+            return _extends({}, state, { reloadCoursesCareer: action.payload });
+        case __WEBPACK_IMPORTED_MODULE_0__actions_types__["i" /* ON_DELETE_CAREER_COURSE */]:
+            return _extends({}, state, { reloadCoursesCareer: true });
         default:
             return state;
     }
@@ -24304,7 +24341,7 @@ var onClickSendLogin = function onClickSendLogin(username, password) {
             headers: {}
         }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["e" /* ON_CLICk_SEND_FORM */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["g" /* ON_CLICk_SEND_FORM */],
                 payload: {
                     username: username,
                     password: password,
@@ -24320,7 +24357,7 @@ var onClickSendLogin = function onClickSendLogin(username, password) {
 var onChangeTextEmail = function onChangeTextEmail(text) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["b" /* ON_CHANGE_TEXT_EMAIL */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["d" /* ON_CHANGE_TEXT_EMAIL */],
             payload: text
         });
     };
@@ -24329,7 +24366,7 @@ var onChangeTextEmail = function onChangeTextEmail(text) {
 var onChangeTextPass = function onChangeTextPass(text) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["c" /* ON_CHANGE_TEXT_PASS */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["e" /* ON_CHANGE_TEXT_PASS */],
             payload: text
         });
     };
@@ -25443,7 +25480,7 @@ var onLoadNews = function onLoadNews() {
             }
         }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["j" /* ON_LOAD_NEWS */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["n" /* ON_LOAD_NEWS */],
                 payload: response.data
             });
         }).catch(function (error) {
@@ -25455,7 +25492,7 @@ var onLoadNews = function onLoadNews() {
 var clickOptionPanel = function clickOptionPanel(option, optionCareer) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["d" /* ON_CLICK_DASHBOARD_ITEM */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["f" /* ON_CLICK_DASHBOARD_ITEM */],
             payload: {
                 option: option,
                 optionCareer: optionCareer
@@ -25467,7 +25504,7 @@ var clickOptionPanel = function clickOptionPanel(option, optionCareer) {
 var onClickOpen = function onClickOpen(open) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["m" /* ON_OPEN_MODAL_NEW_UPLOAD */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["q" /* ON_OPEN_MODAL_NEW_UPLOAD */],
             payload: open
         });
     };
@@ -25476,7 +25513,7 @@ var onClickOpen = function onClickOpen(open) {
 var uploadNewRequest = function uploadNewRequest(title, desc, file) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["p" /* SHOW_LOADER */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["u" /* SHOW_LOADER */],
             payload: true
         });
         var formData = new FormData();
@@ -25487,11 +25524,11 @@ var uploadNewRequest = function uploadNewRequest(title, desc, file) {
         __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_3__config__["a" /* URL_SERVER */] + "/uploadNew", formData).then(function (response) {
             setTimeout(function () {
                 dispatch({
-                    type: __WEBPACK_IMPORTED_MODULE_1__types__["u" /* UPLOAD_IMAGE_COMPLETED */],
+                    type: __WEBPACK_IMPORTED_MODULE_1__types__["z" /* UPLOAD_IMAGE_COMPLETED */],
                     payload: false
                 });
                 dispatch({
-                    type: __WEBPACK_IMPORTED_MODULE_1__types__["p" /* SHOW_LOADER */],
+                    type: __WEBPACK_IMPORTED_MODULE_1__types__["u" /* SHOW_LOADER */],
                     payload: false
                 });
             }, 2000);
@@ -25504,7 +25541,7 @@ var uploadNewRequest = function uploadNewRequest(title, desc, file) {
 var deleteNew = function deleteNew(id) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["p" /* SHOW_LOADER */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["u" /* SHOW_LOADER */],
             payload: true
         });
         __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_3__config__["a" /* URL_SERVER */] + "/deleteNew", { id: id }).then(function (response) {
@@ -25514,7 +25551,7 @@ var deleteNew = function deleteNew(id) {
                     payload: false
                 });
                 dispatch({
-                    type: __WEBPACK_IMPORTED_MODULE_1__types__["p" /* SHOW_LOADER */],
+                    type: __WEBPACK_IMPORTED_MODULE_1__types__["u" /* SHOW_LOADER */],
                     payload: false
                 });
             }, 2000);
@@ -25528,12 +25565,12 @@ var openUpdateModal = function openUpdateModal(open, id) {
     return function (dispatch) {
         if (id) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["o" /* OPEN_UPDATE_MODAL */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["s" /* OPEN_UPDATE_MODAL */],
                 payload: true
             });
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_3__config__["a" /* URL_SERVER */] + "/getNewUpdate", { id: id }).then(function (response) {
                 dispatch({
-                    type: __WEBPACK_IMPORTED_MODULE_1__types__["t" /* UPDATE_NEW_INFO_READY */],
+                    type: __WEBPACK_IMPORTED_MODULE_1__types__["y" /* UPDATE_NEW_INFO_READY */],
                     payload: response
                 });
             }).catch(function (error) {
@@ -25541,7 +25578,7 @@ var openUpdateModal = function openUpdateModal(open, id) {
             });
         } else {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["o" /* OPEN_UPDATE_MODAL */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["s" /* OPEN_UPDATE_MODAL */],
                 payload: open
             });
         }
@@ -25551,16 +25588,16 @@ var openUpdateModal = function openUpdateModal(open, id) {
 var updateNew = function updateNew(id, title, desc) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["p" /* SHOW_LOADER */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["u" /* SHOW_LOADER */],
             payload: true
         });
         __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_3__config__["a" /* URL_SERVER */] + "/updateNew", { id: id, title: title, desc: desc }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["s" /* UPDATE_INFO_COMPLETED */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["x" /* UPDATE_INFO_COMPLETED */],
                 payload: true
             });
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["p" /* SHOW_LOADER */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["u" /* SHOW_LOADER */],
                 payload: false
             });
         }).catch(function (error) {
@@ -25572,7 +25609,7 @@ var updateNew = function updateNew(id, title, desc) {
 var onChangeTitleUpdate = function onChangeTitleUpdate(text) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["r" /* UPDATE_INFO_CHANGE_TITLE */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["w" /* UPDATE_INFO_CHANGE_TITLE */],
             payload: text
         });
     };
@@ -25581,7 +25618,7 @@ var onChangeTitleUpdate = function onChangeTitleUpdate(text) {
 var onChangeDescUpdate = function onChangeDescUpdate(text) {
     return function (dispatch) {
         dispatch({
-            type: __WEBPACK_IMPORTED_MODULE_1__types__["q" /* UPDATE_INFO_CHANGE_DESC */],
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["v" /* UPDATE_INFO_CHANGE_DESC */],
             payload: text
         });
     };
@@ -26572,7 +26609,7 @@ var getCareers = function getCareers(text) {
             }
         }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["g" /* ON_LOAD_CAREERS */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["j" /* ON_LOAD_CAREERS */],
                 payload: response
             });
         }).catch(function (error) {
@@ -26597,7 +26634,7 @@ var postCareer = function postCareer(title, desc, file, image) {
             }
         }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["n" /* ON_POST_CAREER_COMPLETED */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["r" /* ON_POST_CAREER_COMPLETED */],
                 payload: response
             });
         }).catch(function (error) {
@@ -26610,7 +26647,7 @@ var deleteCareer = function deleteCareer(id) {
     return function (dispatch) {
         __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_2__config__["a" /* URL_SERVER */] + "/deleteCareer", { id: id }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["f" /* ON_DELETE_CAREER */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["h" /* ON_DELETE_CAREER */],
                 payload: response
             });
         }).catch(function (error) {
@@ -26624,10 +26661,14 @@ var deleteCareer = function deleteCareer(id) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getSchedules; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getCoursesCalcDashboard; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getCoursesCareers; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return returnCourseSchedule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return getSchedules; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getCoursesCalcDashboard; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getCoursesCareers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return returnCourseSchedule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addCareersCourse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return loadCareersCalc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return reloadCoursesCareer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return deleteCourseCaereer; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__types__ = __webpack_require__(2);
@@ -26645,7 +26686,7 @@ var getSchedules = function getSchedules(text) {
             }
         }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["k" /* ON_LOAD_SCHEDULES_CALC */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["o" /* ON_LOAD_SCHEDULES_CALC */],
                 payload: response
             });
         }).catch(function (error) {
@@ -26663,7 +26704,7 @@ var getCoursesCalcDashboard = function getCoursesCalcDashboard() {
             }
         }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["h" /* ON_LOAD_COURSES_CAL */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["l" /* ON_LOAD_COURSES_CAL */],
                 payload: response
             });
         }).catch(function (error) {
@@ -26681,7 +26722,7 @@ var getCoursesCareers = function getCoursesCareers() {
             }
         }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["i" /* ON_LOAD_COURSES_CAREERS */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["m" /* ON_LOAD_COURSES_CAREERS */],
                 payload: response
             });
         }).catch(function (error) {
@@ -26699,9 +26740,85 @@ var returnCourseSchedule = function returnCourseSchedule() {
             }
         }).then(function (response) {
             dispatch({
-                type: __WEBPACK_IMPORTED_MODULE_1__types__["l" /* ON_LOAD_SCHEDULE_COURSE */],
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["p" /* ON_LOAD_SCHEDULE_COURSE */],
                 payload: response
             });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+};
+
+var addCareersCourse = function addCareersCourse(career_id, course_code) {
+    return function (dispatch) {
+        var data = {
+            career_id: career_id,
+            course_code: course_code
+        };
+        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_2__config__["a" /* URL_SERVER */] + "/addCareersCourse", data, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }
+        }).then(function (response) {
+            dispatch({
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["b" /* ON_ADD_CAREER_COURSE */],
+                payload: response
+            });
+            console.log(response, 'respnose');
+        }).catch(function (error) {
+            dispatch({
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["c" /* ON_ADD_CAREER_COURSE_ERROR */]
+            });
+            console.log(error, 'funciona');
+        });
+    };
+};
+
+var loadCareersCalc = function loadCareersCalc() {
+    return function (dispatch) {
+        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_2__config__["a" /* URL_SERVER */] + "/loadCareerCourseInfo", '', {
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }
+        }).then(function (response) {
+            dispatch({
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["k" /* ON_LOAD_CAREERS_CALC */],
+                payload: response
+            });
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+};
+
+var reloadCoursesCareer = function reloadCoursesCareer(param) {
+    return function (dispatch) {
+        dispatch({
+            type: __WEBPACK_IMPORTED_MODULE_1__types__["t" /* RELOAD_COURSES_CAREER */],
+            payload: param
+        });
+    };
+};
+
+var deleteCourseCaereer = function deleteCourseCaereer(career_id, course_code) {
+    var data = {
+        career_id: career_id,
+        course_code: course_code
+    };
+    return function (dispatch) {
+        __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_2__config__["a" /* URL_SERVER */] + "/deleteCourseCaereer", data, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            }
+        }).then(function (response) {
+            dispatch({
+                type: __WEBPACK_IMPORTED_MODULE_1__types__["i" /* ON_DELETE_CAREER_COURSE */],
+                payload: response
+            });
+            console.log(response);
         }).catch(function (error) {
             console.log(error);
         });
@@ -27800,7 +27917,11 @@ var DashboardCalc = function (_Component) {
         var _this = _possibleConstructorReturn(this, (DashboardCalc.__proto__ || Object.getPrototypeOf(DashboardCalc)).call(this, props));
 
         _this.state = {
-            actualCareer: false
+            modalCareerCourse: false,
+            careerCourseSelected: '',
+            courseCareerSelected: '',
+            careerCourseNameSelected: '',
+            courseCareerNameSelected: ''
         };
         return _this;
     }
@@ -27812,6 +27933,7 @@ var DashboardCalc = function (_Component) {
             this.props.getCoursesCalcDashboard();
             this.props.getCoursesCareers();
             this.props.returnCourseSchedule();
+            this.props.loadCareersCalc();
         }
     }, {
         key: 'renderCourses',
@@ -27819,16 +27941,11 @@ var DashboardCalc = function (_Component) {
             if (this.props.calc.courses) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    null,
+                    { className: 'container-info-calc' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'p',
                         null,
                         'Informacion de cursos'
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'button',
-                        { className: 'btn btn-warning' },
-                        'Agregar'
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'table',
@@ -27890,6 +28007,11 @@ var DashboardCalc = function (_Component) {
                                 );
                             }.bind(this))
                         )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'button',
+                        { className: 'btn btn-warning' },
+                        'Agregar'
                     )
                 );
             } else {
@@ -27906,16 +28028,11 @@ var DashboardCalc = function (_Component) {
             if (this.props.calc.schedules) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    null,
+                    { className: 'container-info-calc' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'p',
                         null,
                         'Informacion de horarios'
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'button',
-                        { className: 'btn btn-warning' },
-                        'Agregar'
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'table',
@@ -27977,6 +28094,11 @@ var DashboardCalc = function (_Component) {
                                 );
                             }.bind(this))
                         )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'button',
+                        { className: 'btn btn-warning' },
+                        'Agregar'
                     )
                 );
             } else {
@@ -27993,31 +28115,175 @@ var DashboardCalc = function (_Component) {
             this.state.actualCareer == careerId ? true : false;
         }
     }, {
+        key: 'addCareerCourseModal',
+        value: function addCareerCourseModal(option) {
+            this.setState({
+                modalCareerCourse: option
+            });
+        }
+    }, {
+        key: 'addCareerCourse',
+        value: function addCareerCourse() {
+            this.props.addCareersCourse(this.state.careerCourseSelected, this.state.courseCareerSelected);
+        }
+    }, {
+        key: 'onSelectedCareer',
+        value: function onSelectedCareer(name, event) {
+            this.setState({
+                careerCourseNameSelected: name,
+                careerCourseSelected: event
+            });
+        }
+    }, {
+        key: 'onSelectedCourse',
+        value: function onSelectedCourse(name, event) {
+            this.setState({
+                courseCareerSelected: event,
+                courseCareerNameSelected: name
+            });
+        }
+    }, {
+        key: 'reloadCareerCourses',
+        value: function reloadCareerCourses() {
+            if (this.props.calc.reloadCoursesCareer) {
+                this.props.getCoursesCareers();
+            }
+        }
+    }, {
+        key: 'returnCareerCourseModal',
+        value: function returnCareerCourseModal() {
+            if (this.state.modalCareerCourse && this.props.calc.careers && this.props.calc.courses) {
+                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'div',
+                    { className: 'static-modal' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["d" /* Modal */].Dialog,
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["d" /* Modal */].Header,
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["d" /* Modal */].Title,
+                                null,
+                                'Agregar curso a carrera'
+                            )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["d" /* Modal */].Body,
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                null,
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    null,
+                                    this.props.calc.coursesCarrerError
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["b" /* DropdownButton */],
+                                {
+                                    title: 'Carreras',
+                                    key: 1,
+                                    id: 'dropdown-basic-' + 1
+                                },
+                                this.props.calc.careers.map(function (item, index) {
+                                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["c" /* MenuItem */],
+                                        {
+                                            key: index,
+                                            eventKey: item.careers_id,
+                                            onSelect: this.onSelectedCareer.bind(this, item.careers_title)
+                                        },
+                                        item.careers_title
+                                    );
+                                }.bind(this))
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["b" /* DropdownButton */],
+                                {
+                                    title: 'Cursos',
+                                    key: 2,
+                                    id: 'dropdown-basic-' + 2
+                                },
+                                this.props.calc.courses.map(function (item, index) {
+                                    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                        __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["c" /* MenuItem */],
+                                        {
+                                            key: index,
+                                            eventKey: item.course_code,
+                                            onSelect: this.onSelectedCourse.bind(this, item.course_name)
+                                        },
+                                        item.course_name
+                                    );
+                                }.bind(this))
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                null,
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    null,
+                                    this.state.careerCourseNameSelected
+                                )
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'div',
+                                null,
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                    'p',
+                                    null,
+                                    this.state.courseCareerNameSelected
+                                )
+                            )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["d" /* Modal */].Footer,
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["a" /* Button */],
+                                { onClick: this.addCareerCourseModal.bind(this, false) },
+                                'Salir'
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["a" /* Button */],
+                                { onClick: this.addCareerCourse.bind(this), bsStyle: 'primary' },
+                                'Guardar'
+                            )
+                        )
+                    )
+                );
+            }
+        }
+    }, {
+        key: 'deleteCourseCaereer',
+        value: function deleteCourseCaereer(idCourse, idCareer) {
+            console.log(idCourse, 'idCourse');
+            console.log(idCareer, 'idCareer');
+
+            this.props.deleteCourseCaereer(idCareer, idCourse);
+        }
+    }, {
         key: 'renderCoursesCarrer',
         value: function renderCoursesCarrer() {
             var actualCareer = void 0;
             if (this.props.calc.coursesCareer) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    null,
+                    { className: 'container-info-calc' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'p',
                         null,
                         'Informacion de Carreras/Cursos'
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'button',
-                        { className: 'btn btn-warning' },
-                        'Agregar'
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["b" /* Tabs */],
-                        { defaultActiveKey: 5, id: 'uncontrolled-tab-example' },
+                        __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["f" /* Tabs */],
+                        { defaultActiveKey: 1, id: 'uncontrolled-tab-example' },
                         this.props.calc.coursesCareer.map(function (item, index) {
                             if (actualCareer != item.careers_id) {
                                 actualCareer = item.careers_id;
                                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["a" /* Tab */],
+                                    __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["e" /* Tab */],
                                     { key: index, eventKey: index, title: item.careers_title },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'table',
@@ -28064,18 +28330,23 @@ var DashboardCalc = function (_Component) {
                                                             { scope: 'row' },
                                                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                                                 'button',
-                                                                { className: 'btn btn-danger' },
+                                                                { onClick: this.deleteCourseCaereer.bind(this, item1.course_code, item.careers_id), className: 'btn btn-danger' },
                                                                 'Eliminar'
                                                             )
                                                         )
                                                     );
                                                 }
-                                            })
+                                            }.bind(this))
                                         )
                                     )
                                 );
                             }
                         }.bind(this))
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'button',
+                        { onClick: this.addCareerCourseModal.bind(this, true), className: 'btn btn-warning' },
+                        'Agregar'
                     )
                 );
             } else {
@@ -28090,29 +28361,23 @@ var DashboardCalc = function (_Component) {
         key: 'returnCourseSchedule',
         value: function returnCourseSchedule() {
             var actualCareer = void 0;
-            console.log(this.props.calc.scheduleCareer, 'this.props.calc.scheduleCareer');
             if (this.props.calc.scheduleCareer) {
                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    null,
+                    { className: 'container-info-calc' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'p',
                         null,
                         'Informacion de Horarios/Cursos'
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'button',
-                        { className: 'btn btn-warning' },
-                        'Agregar'
-                    ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["b" /* Tabs */],
-                        { defaultActiveKey: 5, id: 'uncontrolled-tab-example' },
+                        __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["f" /* Tabs */],
+                        { defaultActiveKey: 1, id: 'uncontrolled-tab-example' },
                         this.props.calc.scheduleCareer.map(function (item, index) {
                             if (actualCareer != item.course_code) {
                                 actualCareer = item.course_code;
                                 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["a" /* Tab */],
+                                    __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["e" /* Tab */],
                                     { key: index, eventKey: index, title: item.course_name },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                         'table',
@@ -28171,6 +28436,11 @@ var DashboardCalc = function (_Component) {
                                 );
                             }
                         }.bind(this))
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        'button',
+                        { className: 'btn btn-warning' },
+                        'Agregar'
                     )
                 );
             } else {
@@ -28184,12 +28454,15 @@ var DashboardCalc = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+            // RELOADS
+            this.reloadCareerCourses();
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'container-info' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     null,
+                    this.returnCareerCourseModal(),
                     this.renderCoursesCarrer(),
                     this.returnCourseSchedule(),
                     this.renderCourses(),
@@ -28214,7 +28487,11 @@ var mapStateToProps = function mapStateToProps(_ref) {
     getSchedules: __WEBPACK_IMPORTED_MODULE_3__actions__["getSchedules"],
     getCoursesCalcDashboard: __WEBPACK_IMPORTED_MODULE_3__actions__["getCoursesCalcDashboard"],
     getCoursesCareers: __WEBPACK_IMPORTED_MODULE_3__actions__["getCoursesCareers"],
-    returnCourseSchedule: __WEBPACK_IMPORTED_MODULE_3__actions__["returnCourseSchedule"]
+    returnCourseSchedule: __WEBPACK_IMPORTED_MODULE_3__actions__["returnCourseSchedule"],
+    addCareersCourse: __WEBPACK_IMPORTED_MODULE_3__actions__["addCareersCourse"],
+    loadCareersCalc: __WEBPACK_IMPORTED_MODULE_3__actions__["loadCareersCalc"],
+    reloadCoursesCareer: __WEBPACK_IMPORTED_MODULE_3__actions__["reloadCoursesCareer"],
+    deleteCourseCaereer: __WEBPACK_IMPORTED_MODULE_3__actions__["deleteCourseCaereer"]
 })(DashboardCalc));
 
 /***/ }),
@@ -35767,7 +36044,7 @@ ToggleButton.propTypes = propTypes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__BreadcrumbItem__ = __webpack_require__(220);
 /* unused harmony reexport BreadcrumbItem */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Button__ = __webpack_require__(169);
-/* unused harmony reexport Button */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_5__Button__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ButtonGroup__ = __webpack_require__(195);
 /* unused harmony reexport ButtonGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ButtonToolbar__ = __webpack_require__(287);
@@ -35791,7 +36068,7 @@ ToggleButton.propTypes = propTypes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__Dropdown__ = __webpack_require__(176);
 /* unused harmony reexport Dropdown */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__DropdownButton__ = __webpack_require__(319);
-/* unused harmony reexport DropdownButton */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_17__DropdownButton__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__Fade__ = __webpack_require__(179);
 /* unused harmony reexport Fade */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__Form__ = __webpack_require__(320);
@@ -35821,9 +36098,9 @@ ToggleButton.propTypes = propTypes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__Media__ = __webpack_require__(180);
 /* unused harmony reexport Media */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__MenuItem__ = __webpack_require__(339);
-/* unused harmony reexport MenuItem */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_32__MenuItem__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__Modal__ = __webpack_require__(340);
-/* unused harmony reexport Modal */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_33__Modal__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ModalBody__ = __webpack_require__(235);
 /* unused harmony reexport ModalBody */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ModalDialog__ = __webpack_require__(236);
@@ -35875,7 +36152,7 @@ ToggleButton.propTypes = propTypes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__SplitButton__ = __webpack_require__(386);
 /* unused harmony reexport SplitButton */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__Tab__ = __webpack_require__(388);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_59__Tab__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_59__Tab__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__TabContainer__ = __webpack_require__(204);
 /* unused harmony reexport TabContainer */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__TabContent__ = __webpack_require__(205);
@@ -35885,7 +36162,7 @@ ToggleButton.propTypes = propTypes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__TabPane__ = __webpack_require__(249);
 /* unused harmony reexport TabPane */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__Tabs__ = __webpack_require__(390);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_64__Tabs__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_64__Tabs__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__Thumbnail__ = __webpack_require__(391);
 /* unused harmony reexport Thumbnail */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__ToggleButton__ = __webpack_require__(250);
@@ -39371,7 +39648,7 @@ function (_React$Component) {
 }(__WEBPACK_IMPORTED_MODULE_3_react___default.a.Component);
 
 DropdownButton.propTypes = propTypes;
-/* unused harmony default export */ var _unused_webpack_default_export = (DropdownButton);
+/* harmony default export */ __webpack_exports__["a"] = (DropdownButton);
 
 /***/ }),
 /* 320 */
@@ -40933,7 +41210,7 @@ function (_React$Component) {
 
 MenuItem.propTypes = propTypes;
 MenuItem.defaultProps = defaultProps;
-/* unused harmony default export */ var _unused_webpack_default_export = (Object(__WEBPACK_IMPORTED_MODULE_9__utils_bootstrapUtils__["a" /* bsClass */])('dropdown', MenuItem));
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_9__utils_bootstrapUtils__["a" /* bsClass */])('dropdown', MenuItem));
 
 /***/ }),
 /* 340 */
@@ -41256,7 +41533,7 @@ Modal.Footer = __WEBPACK_IMPORTED_MODULE_18__ModalFooter__["a" /* default */];
 Modal.Dialog = __WEBPACK_IMPORTED_MODULE_17__ModalDialog__["a" /* default */];
 Modal.TRANSITION_DURATION = 300;
 Modal.BACKDROP_TRANSITION_DURATION = 150;
-/* unused harmony default export */ var _unused_webpack_default_export = (Object(__WEBPACK_IMPORTED_MODULE_21__utils_bootstrapUtils__["a" /* bsClass */])('modal', Object(__WEBPACK_IMPORTED_MODULE_21__utils_bootstrapUtils__["b" /* bsSizes */])([__WEBPACK_IMPORTED_MODULE_24__utils_StyleConfig__["c" /* Size */].LARGE, __WEBPACK_IMPORTED_MODULE_24__utils_StyleConfig__["c" /* Size */].SMALL], Modal)));
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_21__utils_bootstrapUtils__["a" /* bsClass */])('modal', Object(__WEBPACK_IMPORTED_MODULE_21__utils_bootstrapUtils__["b" /* bsSizes */])([__WEBPACK_IMPORTED_MODULE_24__utils_StyleConfig__["c" /* Size */].LARGE, __WEBPACK_IMPORTED_MODULE_24__utils_StyleConfig__["c" /* Size */].SMALL], Modal)));
 
 /***/ }),
 /* 341 */

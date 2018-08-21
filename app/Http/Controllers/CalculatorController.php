@@ -287,4 +287,39 @@ class CalculatorController extends Controller
 
         return $courses_careers;
     }
+
+    public function addCareersCourse(Request $request){
+        $career_id = $request->career_id;
+        $course_code = $request->course_code;
+
+        DB::table('appu_careers_courses')->insert([
+            ['careers_id' => $career_id, 'course_code' => $course_code]
+        ]);
+
+        return 'OK';
+    }
+
+    public function addScheduleCourse(){
+        return 'OK';
+    }
+
+    public function loadCareerCourseInfo(){
+
+        $carrers = DB::table('appu_careers')
+        ->get();
+
+        return $carrers;
+    }
+
+    public function deleteCourseCaereer(Request $request){
+        $career_id = $request->career_id;
+        $course_code = $request->course_code;
+
+        DB::table('appu_careers_courses')->where([
+            ['careers_id', '=', $career_id],
+            ['course_code', '=', $course_code]
+        ])->delete();
+
+        return 'OK';
+    }
 }
