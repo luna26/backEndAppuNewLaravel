@@ -32,6 +32,15 @@ class VerifyCsrfToken extends Middleware
         'addCareersCourse',
         'addScheduleCourse',
         'loadCareerCourseInfo',
-        'deleteCourseCaereer'
+        'deleteCourseCaereer',
+        'addCourseSchedule',
+        'deleteCourseSchedule',
+        'addCourseCalc',
+        'deleteCourseCalc',
+        'getDays',
+        'addSchedule',
+        'deleteSchedule',
+        'getInfoCalculator',
+        'updateInfoCalculator'
     ];
 }

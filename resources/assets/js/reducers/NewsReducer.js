@@ -13,7 +13,6 @@ import {
 const INITIAL_STATE = {
     news: null,
     openNewUploadModal: false,
-    showLoader: false,
     mountComponentAgain: false,
     openModalUpdate: false,
     updateInfo: null,

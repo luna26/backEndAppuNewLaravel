@@ -70,19 +70,26 @@ class CalculatorController extends Controller
 
         $id_student_cost = $id_student_cost_query[0]->info_id_estudent_cost;
 
+        //CREDITOS PARA REALIZAR DESCUENTO
+        $info_credits_payoff_query = DB::table('appu_info')
+        ->select('info_credits_payoff')
+        ->where('info_code', 0)->get();
+
+        $info_credits_payoff = $info_credits_payoff_query[0]->info_credits_payoff;
+
         //SE CALCULA EL PAGO A CREDITO
         $plans = array();
-        $plans['contado'] = $this->calcTotalCash($credit_value, $total_credits, $credit_payoff_first_enroll_cash, $enroll_discount, $enroll_cost, $id_student_cost);
-        $plans['credito'] = $this->calcCredit($credit_value, $total_credits, $credit_payoff_first_enroll, $enroll_discount, $enroll_cost, $id_student_cost);
+        $plans['contado'] = $this->calcTotalCash($credit_value, $total_credits, $credit_payoff_first_enroll_cash, $enroll_discount, $enroll_cost, $id_student_cost, $info_credits_payoff);
+        $plans['credito'] = $this->calcCredit($credit_value, $total_credits, $credit_payoff_first_enroll, $enroll_discount, $enroll_cost, $id_student_cost, $info_credits_payoff);
 
         $plans['creditotest'] = $this->sendEmail($email);
         return $plans;
     }
 
-    public function calcTotalCash($credit_value, $total_credits, $credit_payoff_first_enroll, $enroll_discount, $enroll_cost, $id_student_cost)
+    public function calcTotalCash($credit_value, $total_credits, $credit_payoff_first_enroll, $enroll_discount, $enroll_cost, $id_student_cost, $info_credits_payoff)
     {
         $total = ($credit_value * $total_credits);
-        if ($total_credits > 6) {
+        if ($total_credits > $info_credits_payoff) {
             $payOff = $total * $credit_payoff_first_enroll;
         } else {
             $payOff = $total * 0.20;
@@ -117,10 +124,10 @@ class CalculatorController extends Controller
         return $costs;
     }
 
-    public function calcCredit($credit_value, $total_credits, $credit_payoff_first_enroll, $enroll_discount, $enroll_cost, $id_student_cost)
+    public function calcCredit($credit_value, $total_credits, $credit_payoff_first_enroll, $enroll_discount, $enroll_cost, $id_student_cost, $info_credits_payoff)
     {
         $total = ($credit_value * $total_credits);
-        if ($total_credits > 6) {
+        if ($total_credits > $info_credits_payoff) {
             $payOff = $total * $credit_payoff_first_enroll;
         } else {
             $payOff = 0;
@@ -299,10 +306,6 @@ class CalculatorController extends Controller
         return 'OK';
     }
 
-    public function addScheduleCourse(){
-        return 'OK';
-    }
-
     public function loadCareerCourseInfo(){
 
         $carrers = DB::table('appu_careers')
@@ -320,6 +323,101 @@ class CalculatorController extends Controller
             ['course_code', '=', $course_code]
         ])->delete();
 
+        return 'OK';
+    }
+
+    public function addCourseSchedule(Request $request){
+        $schedule_id = $request->schedule_id;
+        $course_code = $request->course_code;
+
+        DB::table('appu_courses_schedule')->insert([
+            ['course_code' => $course_code, 'schedule_id' => $schedule_id]
+        ]);
+
+
+        return 'OK';
+    }
+
+    public function deleteCourseSchedule(Request $request){
+        $schedule_id = $request->schedule_id;
+        $course_code = $request->course_code;
+
+        DB::table('appu_courses_schedule')->where([
+            ['schedule_id', '=', $schedule_id],
+            ['course_code', '=', $course_code]
+        ])->delete();
+
+        return 'OK';
+    }
+
+    public function addCourseCalc(Request $request){
+        $course_code = $request->course_code;
+        $course_name = $request->course_name;
+        $course_credits = $request->course_credits;
+
+        DB::table('appu_courses')->insert([
+            ['course_code' => $course_code, 'course_name' => $course_name, 'course_credits' => $course_credits]
+        ]);
+
+
+        return 'OK';
+    }
+
+    public function deleteCourseCalc(Request $request){
+        $course_code = $request->course_code;
+
+        DB::table('appu_courses')->where([
+            ['course_code', '=', $course_code]
+        ])->delete();
+
+        return 'OK';
+    }
+
+    public function getDays(){
+        $days = DB::table('appu_days')
+        ->get();
+
+        return $days;
+    }
+
+    public function addSchedule(Request $request){
+        $day_id = $request->day_id;
+        $info_schedule = $request->info_schedule;
+
+        DB::table('appu_schedule')->insert([
+            ['day_id' => $day_id, 'schedule_info' => $info_schedule]
+        ]);
+
+        return 'OK';
+    }
+
+    public function deleteSchedule(Request $request){
+        $schedule_id = $request->schedule_id;
+
+        DB::table('appu_schedule')->where([
+            ['schedule_id', '=', $schedule_id]
+        ])->delete();
+
+        return 'OK';
+    }
+
+    public function getInfoCalculator(){
+        $info_calc = DB::table('appu_info')
+        ->get();
+
+        return $info_calc;
+    }
+
+    public function updateInfoCalculator(Request $request){
+        $info_credit_value =  $request->info_credit_value;
+        $info_enroll =  $request->info_enroll;
+        $info_credits_payoff =  $request->info_credits_payoff;
+        $info_id_estudent_cost =  $request->info_id_estudent_cost;
+        $info_payoff_first_enroll_credit =  $request->info_payoff_first_enroll_credit;
+        $info_payoff_first_enroll_cash =  $request->info_payoff_first_enroll_cash;
+        $info_enroll_discount =  $request->info_enroll_discount;
+    
+        DB::table('appu_info')->where('info_id', 4)->update(['info_credit_value' => $info_credit_value, 'info_enroll' => $info_enroll, 'info_credits_payoff' => $info_credits_payoff, 'info_id_estudent_cost' => $info_id_estudent_cost, 'info_payoff_first_enroll_credit' => $info_payoff_first_enroll_credit, 'info_payoff_first_enroll_cash' => $info_payoff_first_enroll_cash, 'info_enroll_discount' => $info_enroll_discount]);
         return 'OK';
     }
 }

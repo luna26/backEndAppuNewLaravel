@@ -37,3 +37,6 @@ export const ON_DELETE_CAREER_COURSE = 'on_delete_career_course_error';
 export const ON_LOAD_CAREER_SCHEDULE_INFO = 'on_load_career_schedule_info';
 export const ON_LOAD_CAREERS_CALC = 'on_load_careers';
 export const RELOAD_COURSES_CAREER = 'reload_courses_careers';
+export const ON_LOAD_DAYS = 'on_load_days';
+export const ON_LOAD_INFO_CALCULATOR = 'on_load_info_calculator';
+export const SHOW_LOADER_CALC = 'show_loader_calc';

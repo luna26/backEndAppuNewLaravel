@@ -7,7 +7,10 @@ import {
     ON_ADD_CAREER_COURSE_ERROR,
     ON_ADD_CAREER_COURSE,
     RELOAD_COURSES_CAREER,
-    ON_DELETE_CAREER_COURSE
+    ON_DELETE_CAREER_COURSE,
+    ON_LOAD_DAYS,
+    ON_LOAD_INFO_CALCULATOR,
+    SHOW_LOADER_CALC
 } from '../actions/types';
 
 const INITIAL_STATE = {
@@ -17,7 +20,10 @@ const INITIAL_STATE = {
     scheduleCareer: null,
     coursesCareer: null,
     coursesCarrerError: '',
-    reloadCoursesCareer: false
+    reloadCoursesCareer: false,
+    days: null,
+    calculatorInfo: null,
+    loadModal: false
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -33,13 +39,19 @@ export default (state = INITIAL_STATE, action) => {
         case ON_LOAD_COURSES_CAREERS:
             return { ...state, coursesCareer: action.payload.data, coursesCarrerError: '', reloadCoursesCareer: false };
         case ON_ADD_CAREER_COURSE:
-            return { ...state, coursesCarrerError: '', reloadCoursesCareer: true, coursesCarrerError: 'Curso agregado a carrera correctamente' };
+            return { ...state, loadModal: false, coursesCarrerError: '', reloadCoursesCareer: true, coursesCarrerError: 'Curso agregado a carrera correctamente' };
         case ON_ADD_CAREER_COURSE_ERROR:
-            return { ...state, coursesCarrerError: 'Combinacion ya existe' };
+            return { ...state, loadModal: false, coursesCarrerError: 'Combinacion ya existe' };
         case RELOAD_COURSES_CAREER:
-            return { ...state, reloadCoursesCareer: action.payload };
+            return { ...state, loadModal: false, reloadCoursesCareer: action.payload, loadModal: false };
         case ON_DELETE_CAREER_COURSE:
-            return { ...state, reloadCoursesCareer: true };
+            return { ...state, loadModal: false, reloadCoursesCareer: true };
+        case ON_LOAD_DAYS:
+            return { ...state, days: action.payload };
+        case ON_LOAD_INFO_CALCULATOR:
+            return { ...state, calculatorInfo: action.payload };
+        case SHOW_LOADER_CALC:
+            return { ...state, loadModal: true };
         default:
             return state;
     }

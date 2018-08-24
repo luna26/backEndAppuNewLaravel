@@ -4,7 +4,7 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-    panelOptionSelected: 2,
+    panelOptionSelected: 4,
     showLoader: false,
     infoCareersDropdown:null,
     carrerSelected:null
@@ -16,7 +16,6 @@ export default (state = INITIAL_STATE, action) => {
             return { ...state, panelOptionSelected: action.payload.option, carrerSelected:action.payload.optionCareer  };
         case SHOW_LOADER:
             return { ...state, showLoader: action.payload };
-            break;
         default:
             return state;
     }

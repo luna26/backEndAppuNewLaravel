@@ -368,3 +368,28 @@ textarea {
     font-size: 18px;
     color: #3dc4ff;
 }
+
+.calc-info-options-container{
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.field-calc-option input{
+    position: absolute;
+    right: 0px;
+}
+
+.loader-calc .modal{
+    z-index: 1000000;
+}
+
+.loader-calc{
+    color: white;
+}
+
+.loader-calc .modal-content{
+    background-color: #3dc4ff;
+}
