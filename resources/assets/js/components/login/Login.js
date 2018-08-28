@@ -28,7 +28,7 @@ class Login extends React.Component {
                         />
                     </div>
                     <div className='form-input'>
-                        <p>Contrasena</p>
+                        <p>Contraseña</p>
                         <input
                             onChange={event => this.onInputChangePassword(event.target.value)}
                             value={password}

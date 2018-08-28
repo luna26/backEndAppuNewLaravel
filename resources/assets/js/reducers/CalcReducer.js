@@ -41,7 +41,7 @@ export default (state = INITIAL_STATE, action) => {
         case ON_ADD_CAREER_COURSE:
             return { ...state, loadModal: false, coursesCarrerError: '', reloadCoursesCareer: true, coursesCarrerError: 'Curso agregado a carrera correctamente' };
         case ON_ADD_CAREER_COURSE_ERROR:
-            return { ...state, loadModal: false, coursesCarrerError: 'Combinacion ya existe' };
+            return { ...state, loadModal: false, coursesCarrerError: 'Combinación ya existe' };
         case RELOAD_COURSES_CAREER:
             return { ...state, loadModal: false, reloadCoursesCareer: action.payload, loadModal: false };
         case ON_DELETE_CAREER_COURSE:

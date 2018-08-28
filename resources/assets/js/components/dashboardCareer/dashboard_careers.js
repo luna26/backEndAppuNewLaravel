@@ -94,7 +94,7 @@ class DashboardCareers extends Component {
                         />
                     </div>
                     <div>
-                        <label>Descripcion de la carrera</label>
+                        <label>Descripción de la carrera</label>
                         <textarea
                             onChange={event => this.changeFormDesc(event.target.value)}
                         />
@@ -104,7 +104,7 @@ class DashboardCareers extends Component {
                         <input type='file' ref={refCareerPlan} />
                     </div>
                     <div>
-                        <label>Imagen a mostrar en la aplicacion</label>
+                        <label>Imagen a mostrar en la aplicación</label>
                         <input type='file' ref={refImageCareer} />
                     </div>
                     <div>

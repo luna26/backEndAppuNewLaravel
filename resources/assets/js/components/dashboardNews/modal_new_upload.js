@@ -9,7 +9,7 @@ class ModalNewUpload extends Component {
                 <div className='upload-new-form'>
                     <p>Cargar Nueva Noticia</p>
                     <div>
-                        <p>Titulo (max 150)</p>
+                        <p>Título (max 150)</p>
                         <input
                             className='input-upload-new-title'
                             type='test'
@@ -18,7 +18,7 @@ class ModalNewUpload extends Component {
                         />
                     </div>
                     <div>
-                        <p>Descripcion (max 900)</p>
+                        <p>Descripción (max 900)</p>
                         <textarea
                             className='input-upload-new-desc'
                             maxLength="900"
@@ -35,7 +35,7 @@ class ModalNewUpload extends Component {
                         />
                     </div>
                     <div>
-                        <p>*Click para subir la noticia a la aplicacion</p>
+                        <p>*Click para subir la noticia a la aplicación</p>
                         <p><button className='btn btn-info' onClick={sendRequestFunction.bind(this, this.inputFileRef)}>Enviar</button></p>
                         <p><button className='btn btn-danger' onClick={onClose.bind(this)}>Cerrar</button></p>
                     </div>

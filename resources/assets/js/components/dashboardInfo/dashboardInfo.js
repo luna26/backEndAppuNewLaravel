@@ -61,7 +61,7 @@ class DashboardInfo extends Component {
         } else {
             return (
                 <div>
-                    Cargando Informacion.
+                    Cargando Información.
                 </div>
             );
         }
@@ -77,7 +77,7 @@ class DashboardInfo extends Component {
                 <div className='loader-calc'>
                     <Modal.Dialog>
                         <Modal.Header>
-                            <Modal.Title>Enviando Informacion</Modal.Title>
+                            <Modal.Title>Enviando Información</Modal.Title>
                         </Modal.Header>
                     </Modal.Dialog>
                 </div>
@@ -89,7 +89,7 @@ class DashboardInfo extends Component {
         return (
             <div className='container-info'>
                 {this.returnLoader()}
-                <p>Informacion de la universidad</p>
+                <p>Información de la Universidad</p>
                 {this.returnInfo()}
             </div>
         );
