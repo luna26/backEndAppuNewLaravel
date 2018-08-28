@@ -12,7 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'getNewsDashboard',
+        'getNewsDashboard', 
         'getNews',
         'uploadNew',
         'deleteNew',
@@ -41,6 +41,7 @@ class VerifyCsrfToken extends Middleware
         'addSchedule',
         'deleteSchedule',
         'getInfoCalculator',
-        'updateInfoCalculator'
+        'updateInfoCalculator',
+        'updateInfoDetails'
     ];
 }

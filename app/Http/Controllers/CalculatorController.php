@@ -343,7 +343,7 @@ class CalculatorController extends Controller
         $course_code = $request->course_code;
 
         DB::table('appu_courses_schedule')->where([
-            ['schedule_id', '=', $schedule_id],
+            ['schedule_id', '=', $schedule_id], 
             ['course_code', '=', $course_code]
         ])->delete();
 
@@ -419,5 +419,13 @@ class CalculatorController extends Controller
     
         DB::table('appu_info')->where('info_id', 4)->update(['info_credit_value' => $info_credit_value, 'info_enroll' => $info_enroll, 'info_credits_payoff' => $info_credits_payoff, 'info_id_estudent_cost' => $info_id_estudent_cost, 'info_payoff_first_enroll_credit' => $info_payoff_first_enroll_credit, 'info_payoff_first_enroll_cash' => $info_payoff_first_enroll_cash, 'info_enroll_discount' => $info_enroll_discount]);
         return 'OK';
+    }
+
+    public function updateInfoDetails(Request $request){
+        $info_details =  $request->info_details;
+    
+        DB::table('appu_info')->where('info_id', 4)->update(['info_details' => $info_details]);
+        
+        return 'ok';
     }
 }

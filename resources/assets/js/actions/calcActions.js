@@ -208,6 +208,10 @@ export const addScheduleCourse = (schedule_id, course_code) => {
                 });
             })
             .catch(function (error) {
+                dispatch({
+                    type: RELOAD_COURSES_CAREER,
+                    payload: true
+                });
                 console.log(error);
             });
     }
@@ -236,6 +240,10 @@ export const deleteScheduleCourse = (schedule_id, course_code) => {
                 });
             })
             .catch(function (error) {
+                dispatch({
+                    type: RELOAD_COURSES_CAREER,
+                    payload: true
+                });
                 console.log(error);
             });
     }
@@ -266,6 +274,10 @@ export const newCourse = (course_code, course_name, course_credits) => {
                 });
             })
             .catch(function (error) {
+                dispatch({
+                    type: RELOAD_COURSES_CAREER,
+                    payload: true
+                });
                 console.log(error);
             });
     }
@@ -294,6 +306,10 @@ export const deleteCourseCalc = (course_code) => {
                 });
             })
             .catch(function (error) {
+                dispatch({
+                    type: RELOAD_COURSES_CAREER,
+                    payload: true
+                });
                 console.log(error);
             });
     }
@@ -345,6 +361,10 @@ export const addSchedule = (day_id, info_schedule) => {
                 });
             })
             .catch(function (error) {
+                dispatch({
+                    type: RELOAD_COURSES_CAREER,
+                    payload: true
+                });
                 console.log(error);
             });
     }
@@ -374,6 +394,10 @@ export const deleteSchedule = (schedule_id) => {
                 });
             })
             .catch(function (error) {
+                dispatch({
+                    type: RELOAD_COURSES_CAREER,
+                    payload: true
+                });
                 console.log(error);
             });
     }

@@ -53,6 +53,7 @@ Route::post('/addSchedule', 'CalculatorController@addSchedule');
 Route::post('/deleteSchedule', 'CalculatorController@deleteSchedule');
 Route::post('/getInfoCalculator', 'CalculatorController@getInfoCalculator');
 Route::post('/updateInfoCalculator', 'CalculatorController@updateInfoCalculator');
+Route::post('/updateInfoDetails', 'CalculatorController@updateInfoDetails');
 
 //  Auth::routes();
 //  Route::get('/', 'HomeController@index')->name('welcome');

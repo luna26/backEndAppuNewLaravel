@@ -85,5 +85,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        var csrf_token = '<?php echo csrf_token(); ?>';
+    </script>
 </body>
 </html>

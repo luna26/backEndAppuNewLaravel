@@ -40,3 +40,8 @@ export const RELOAD_COURSES_CAREER = 'reload_courses_careers';
 export const ON_LOAD_DAYS = 'on_load_days';
 export const ON_LOAD_INFO_CALCULATOR = 'on_load_info_calculator';
 export const SHOW_LOADER_CALC = 'show_loader_calc';
+
+
+//INFO
+
+export const ON_LOAD_INFO_DASHBOARD = 'on_laod_info_dashboard';

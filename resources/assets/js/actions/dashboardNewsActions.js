@@ -58,6 +58,9 @@ export const onClickOpen = (open) => {
 }
 
 export const uploadNewRequest = (title, desc, file) => {
+
+    console.log(window.csrf_token,  'csrf_token');
+
     return dispatch => {
         dispatch({
             type: SHOW_LOADER,
@@ -68,6 +71,7 @@ export const uploadNewRequest = (title, desc, file) => {
         formData.append('title', title);
         formData.append('desc', desc);
         formData.append('file', file);
+
         axios.post(URL_SERVER+"/uploadNew", formData)
             .then(function (response) {
                 setTimeout(function () {

@@ -1,5 +1,4 @@
 import {
-    ON_CLICk_SEND_FORM,
     ON_CHANGE_TEXT_EMAIL,
     ON_CHANGE_TEXT_PASS
 } from '../actions/types';
@@ -15,7 +14,6 @@ export default (state = INITIAL_STATE, action) => {
             return { ...state, email: action.payload };
         case ON_CHANGE_TEXT_PASS:
             return { ...state, password: action.payload };
-            break;
         default:
             return state;
     }

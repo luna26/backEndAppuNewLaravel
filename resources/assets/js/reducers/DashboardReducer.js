@@ -4,7 +4,7 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-    panelOptionSelected: 4,
+    panelOptionSelected: 0,
     showLoader: false,
     infoCareersDropdown:null,
     carrerSelected:null

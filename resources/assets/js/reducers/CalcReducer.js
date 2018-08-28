@@ -51,7 +51,7 @@ export default (state = INITIAL_STATE, action) => {
         case ON_LOAD_INFO_CALCULATOR:
             return { ...state, calculatorInfo: action.payload };
         case SHOW_LOADER_CALC:
-            return { ...state, loadModal: true };
+            return { ...state, loadModal: action.payload };
         default:
             return state;
     }
