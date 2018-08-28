@@ -24,7 +24,7 @@ class Dashboard extends Component {
             default:
                 return (
                     <div className='title-appu'>
-                        Bienvenido al panel administrativo de Appu!
+                        Bienvenido al panel administrativo!
                     </div>
                 );
         }

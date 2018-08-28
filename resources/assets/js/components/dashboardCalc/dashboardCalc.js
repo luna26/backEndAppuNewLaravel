@@ -154,13 +154,13 @@ class DashboardCalc extends Component {
         if (this.props.calc.courses) {
             return (
                 <div className='container-info-calc'>
-                    <p>Informacion de cursos</p>
+                    <p>Información de cursos</p>
                     <table className="table table-dark">
                         <thead>
                             <tr>
-                                <th scope="col">CODIGO</th>
+                                <th scope="col">Código</th>
                                 <th scope="col">Curso</th>
-                                <th scope="col">Creditos</th>
+                                <th scope="col">Créditos</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -272,12 +272,12 @@ class DashboardCalc extends Component {
         if (this.props.calc.schedules) {
             return (
                 <div className='container-info-calc'>
-                    <p>Informacion de horarios</p>
+                    <p>Información de horarios</p>
                     <table className="table table-dark">
                         <thead>
                             <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Dia</th>
+                                <th scope="col">Id</th>
+                                <th scope="col">Día</th>
                                 <th scope="col">Info</th>
                             </tr>
                         </thead>
@@ -425,7 +425,7 @@ class DashboardCalc extends Component {
         if (this.props.calc.coursesCareer) {
             return (
                 <div className='container-info-calc'>
-                    <p>Informacion de Carreras/Cursos</p>
+                    <p>Información de Carreras/Cursos</p>
 
                     <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
 
@@ -439,7 +439,7 @@ class DashboardCalc extends Component {
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">Curso</th>
-                                                        <th scope="col">Codigo del curso</th>
+                                                        <th scope="col">Código del curso</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -582,7 +582,7 @@ class DashboardCalc extends Component {
         if (this.props.calc.scheduleCareer) {
             return (
                 <div className='container-info-calc'>
-                    <p>Informacion de Horarios/Cursos</p>
+                    <p>Información de Horarios/Cursos</p>
                     <Tabs defaultActiveKey={0} id="uncontrolled-tab-example">
 
                         {
@@ -594,8 +594,8 @@ class DashboardCalc extends Component {
                                             <table className="table table-dark">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">Dia</th>
-                                                        <th scope="col">Informacion de horario</th>
+                                                        <th scope="col">Día</th>
+                                                        <th scope="col">Información de horario</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -780,49 +780,49 @@ class DashboardCalc extends Component {
             return (
                 <div className='calc-info-options-container'>
                     <div className='field-calc-option'>
-                        <label>Valor del credito</label>
+                        <label>Valor del crédito.</label>
                         <input
                             value={this.setValuesCalculator(1)}
                             onChange={event => this.onInputChangeCreditValue(event.target.value)}
                         />
                     </div>
                     <div className='field-calc-option'>
-                        <label>Valor de la matricula</label>
+                        <label>Valor de la matrícula.</label>
                         <input
                             value={this.setValuesCalculator(2)}
                             onChange={event => this.onInputChangeEnrollValue(event.target.value)}
                         />
                     </div>
                     <div className='field-calc-option'>
-                        <label>Valor del carne estudiantil</label>
+                        <label>Valor del carné estudiantil.</label>
                         <input
                             value={this.setValuesCalculator(3)}
                             onChange={event => this.onInputChangeStudentIdValue(event.target.value)}
                         />
                     </div>
                     <div className='field-calc-option'>
-                        <label>Descuento de primer ingreso (credito), porcentaje</label>
+                        <label>Porcentaje de descuento primer ingreso (Pago a crédito)</label>
                         <input
                             value={this.setValuesCalculator(4)}
                             onChange={event => this.onInputChangePayoffCreditValue(event.target.value)}
                         />
                     </div>
                     <div className='field-calc-option'>
-                        <label>Descuento de primer ingreso (contado), porcentaje</label>
+                        <label>Porcentaje de descuento primer ingreso (Pago a contado)</label>
                         <input
                             value={this.setValuesCalculator(5)}
                             onChange={event => this.onInputChangePayoffCashValue(event.target.value)}
                         />
                     </div>
                     <div className='field-calc-option'>
-                        <label>Descuento de primer ingreso Matriucla</label>
+                        <label>Descuento en Matrícula primer ingreso.</label>
                         <input
                             value={this.setValuesCalculator(6)}
                             onChange={event => this.onInputChangePayoffEnroll(event.target.value)}
                         />
                     </div>
                     <div className='field-calc-option'>
-                        <label>Cantidad de creditos para aplicar descuento, (Mayor a)</label>
+                        <label>Cantidad de créditos para aplicar descuento (Mayor a)</label>
                         <input
                             value={this.setValuesCalculator(7)}
                             onChange={event => this.onInputChangeCreditsToPayoff(event.target.value)}
@@ -836,7 +836,7 @@ class DashboardCalc extends Component {
         } else {
             return (
                 <div>
-                    <span>Cargando parametros de la calculadora</span>
+                    <span>Cargando parámetros de la calculadora</span>
                 </div>
             );
         }
@@ -848,7 +848,7 @@ class DashboardCalc extends Component {
                 <div className='loader-calc'>
                     <Modal.Dialog>
                         <Modal.Header>
-                            <Modal.Title>Enviando Informacion</Modal.Title>
+                            <Modal.Title>Enviando Información</Modal.Title>
                         </Modal.Header>
                     </Modal.Dialog>
                 </div>
