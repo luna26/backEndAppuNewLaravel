@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return(
         <div className='container-header'>
-            <p>Panel administrativo de Appu</p>
+            <p>Panel administrativo aplicación móvil!</p>
         </div>
     );
 }

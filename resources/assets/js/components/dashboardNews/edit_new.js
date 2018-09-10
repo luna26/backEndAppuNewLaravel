@@ -22,7 +22,7 @@ class EditNew extends Component {
                         />
                     </div>
                     <div className='edit-new-desc'>
-                        <p>Descripcion (max 900)</p>
+                        <p>Descripción (max 900)</p>
                         <textarea
                             ref={refInputDesc}
                             value={desc}
@@ -39,7 +39,7 @@ class EditNew extends Component {
         } else {
             return (
                 <div className='edit-form-contaier'>
-                    Cargando Informacion
+                    Cargando Información
                 </div>
             );
         }
