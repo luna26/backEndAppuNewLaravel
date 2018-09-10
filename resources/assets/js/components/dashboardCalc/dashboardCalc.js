@@ -873,10 +873,10 @@ class DashboardCalc extends Component {
                     {/* END Modals */}
 
                     {this.returnOptionsCalc()}
-                    {this.renderCoursesCarrer()}
-                    {this.returnCourseSchedule()}
                     {this.renderCourses()}
                     {this.renderSchedule()}
+                    {this.renderCoursesCarrer()}
+                    {this.returnCourseSchedule()}
                 </div>
             </div>
         );
